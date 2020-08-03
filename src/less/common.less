@@ -1,0 +1,97 @@
+@charset 'utf-8';
+
+// variables
+@green_color: #44C693;
+@white_color: #ffffff;
+@black_color: #1A1C1F;
+@blue_color: #4CA9ED;
+@gray_color: #D8D8D8;
+@red_color: #EB5757;
+
+@font_pc_12: 12px;
+@font_pc_16: 16px;
+@font_pc_18: 18px;
+@font_pc_20: 20px;
+@font_pc_35: 35px;
+@font_pc_50: 50px;
+
+:focus{
+    outline: none;
+}
+.flex-row(){
+    display: flex;
+    flex-flow: nowrap row;
+}
+
+html{
+    font-size: 100px;
+}
+body{
+    color: @black_color;
+}
+a{
+    color: @blue_color;
+    &:hover,&:focus{
+        color: @blue_color;
+        outline: none;
+    }
+}
+.a-link{
+    color: @blue_color;
+}
+.red{
+    color: @red_color;
+}
+.font-12{
+    font-size: @font_pc_12;
+}
+.font-16{
+    font-size: @font_pc_16;
+}
+.font-18{
+    font-size: @font_pc_18;
+}
+.font-20{
+    font-size: @font_pc_20;
+}
+.font-35{
+    font-size: @font_pc_35;
+}
+
+/* 按钮 */
+.btn-handle-link{
+    background-color: @green_color;
+    color: @white_color;
+    display: inline-block;
+    text-align: center;
+    min-width: 3.4rem;
+    padding: .2rem 0;
+    border-radius: 2px;
+    font-size: @font_pc_20;
+    &:hover, &:focus{
+        background-color: @green_color;
+        color: @white_color;
+        text-decoration: none;
+        transform: translateY(-3px);
+        transition: transform .4s;
+    }
+}
+
+/* footer */
+.footer{
+    text-align: center;
+    margin-top: .2rem;
+    margin-bottom: 1rem;
+    .line{
+        height: 1px;
+        background-color: @gray_color;
+        margin-bottom: .3rem;
+    }
+    img{
+        width: .5rem;
+    }
+    .copyright{
+        margin-top: .1rem;
+        color: #8C8C8C;
+    }
+}
